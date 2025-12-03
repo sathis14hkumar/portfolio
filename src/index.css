@@ -85,12 +85,26 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
+@layer utilities {
+  .bg-gradient-neon {
+    background: var(--gradient-neon);
   }
-
-  body {
-    @apply bg-background text-foreground;
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .shadow-glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .shadow-glow-accent {
+    box-shadow: var(--glow-accent);
   }
 }
+
+
